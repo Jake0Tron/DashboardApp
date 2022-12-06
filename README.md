@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# Running the server
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project runs an express server to proxy all traffic from the front end. From the project directory, just run:
+
+```js
+npm start
+```
+
+and the development server (create-react-app) and express server will be run [concurrently](https://www.npmjs.com/package/concurrently).
 
 ## Available Scripts
 
