@@ -1,4 +1,20 @@
-# Running the server
+# Weather React App
+
+## TODOs
+
+- Set up a series of small widgets
+  - news?
+    - set keywords for interests?
+- Drag/drop UI arrangement for widgets
+- Routing for individual widgets
+- Error handling for server fetch calls
+- Caching server data (determine caching strategy)
+- deploy to the internet!
+- Maybe look at Google Maps API or something for rendering/location selection
+- https://developers.google.com/maps/documentation/javascript
+- see https://openweathermap.org/widgets-constructor for example styling
+
+## Running the server
 
 This project runs an express server to proxy all traffic from the front end. From the project directory, just run:
 

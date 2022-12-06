@@ -7,10 +7,13 @@ import "./App.css";
 
 /* TODO: 
   - Set up a series of small widgets
-    - various weather things
     - news?
       - set keywords for interests?
   - Drag/drop UI arrangement for widgets
+  - Routing for individual widgets
+  - Error handling for server fetch calls
+  - Caching server data (determine caching strategy)
+  - deploy to the internet!
 
    Maybe look at Google Maps API or something for rendering/location selection
     https://developers.google.com/maps/documentation/javascript

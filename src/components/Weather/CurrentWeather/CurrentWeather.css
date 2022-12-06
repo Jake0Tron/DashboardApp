@@ -2,6 +2,7 @@
   border: 1px solid black;
   display: flex;
   flex-direction: column;
+  box-shadow: 4px 4px 6px;
 }
 
 .name {

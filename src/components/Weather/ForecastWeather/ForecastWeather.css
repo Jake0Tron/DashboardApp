@@ -1,6 +1,7 @@
 .forecastWeather {
   border: 1px solid green;
   width: 600px;
+  box-shadow: 4px 4px 6px;
 }
 
 .weatherCarousel {

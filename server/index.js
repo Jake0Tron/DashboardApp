@@ -3,6 +3,8 @@ const fetch = (...args) =>
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const path = require("path");
+
 const app = express();
 const port = 8080;
 const fs = require("fs");
@@ -12,6 +14,7 @@ let API_KEY;
 
 app.use(cors(), bodyParser.json());
 
+// Get API key for weather
 fs.readFile("./API_KEYS.txt", "utf8", (err, data) => {
   if (err) {
     console.error(err);
@@ -19,6 +22,13 @@ fs.readFile("./API_KEYS.txt", "utf8", (err, data) => {
   }
   console.log(data);
   API_KEY = data;
+});
+
+// Serve build directory statically for deployment
+app.use(express.static(path.join(__dirname, "build")));
+
+app.get("/", function (req, res) {
+  res.sendFile(path.join(__dirname, "build", "index.html"));
 });
 
 /**

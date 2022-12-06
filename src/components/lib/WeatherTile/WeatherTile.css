@@ -1,3 +1,19 @@
 .weatherTile {
   border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+  align-items: center;
+}
+
+.description {
+  font-size: medium;
+  text-transform: capitalize;
+}
+
+.icon {
+  border: 1px solid gray;
+  border-radius: 0.25rem;
+  width: 50px;
+  aspect-ratio: 1 / 1;
 }
