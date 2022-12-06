@@ -5,11 +5,21 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const app = express();
 const port = 8080;
+const fs = require("fs");
 const { getTrimmedLatLon } = require("./utils");
 
-const API_KEY = "85d47c9ef88fa239046e9449dfa49367";
+let API_KEY;
 
 app.use(cors(), bodyParser.json());
+
+fs.readFile("./API_KEYS.txt", "utf8", (err, data) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  console.log(data);
+  API_KEY = data;
+});
 
 /**
  * TODO:
