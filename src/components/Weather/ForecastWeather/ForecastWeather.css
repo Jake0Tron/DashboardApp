@@ -1,0 +1,9 @@
+.forecastWeather {
+  border: 1px solid green;
+  width: 600px;
+}
+
+.weatherCarousel {
+  display: flex;
+  overflow: auto;
+}

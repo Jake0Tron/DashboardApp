@@ -1,0 +1,10 @@
+.currentWeatherContainer {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  border: 1px solid blue;
+  font-size: xx-large;
+}

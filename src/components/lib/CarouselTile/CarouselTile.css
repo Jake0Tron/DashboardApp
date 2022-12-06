@@ -1,0 +1,7 @@
+.carouselTile {
+  border: 1px solid lightcoral;
+  padding: 0.25em;
+  margin: 0.25em;
+  width: 185px;
+  box-shadow: 2px 2px 2px;
+}

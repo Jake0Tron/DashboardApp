@@ -1,0 +1,17 @@
+.windDisplay {
+  border: 1px solid lightblue;
+}
+
+.speedDirection {
+  display: flex;
+}
+
+.speed {
+  font-size: medium;
+}
+
+.direction {
+}
+
+.gust {
+}

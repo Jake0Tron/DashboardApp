@@ -30,7 +30,7 @@ function App() {
     <div className="App">
       <CurrentWeather />
       <ForecastWeather />
-      <AirPollutionWeather />
+      {/* <AirPollutionWeather /> */}
     </div>
   );
 }

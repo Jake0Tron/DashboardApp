@@ -40,10 +40,9 @@ app.get("/weather", async (req, res) => {
 //  * https://openweathermap.org/forecast5
 app.get("/forecast", async (req, res) => {
   const { lat, lon } = getTrimmedLatLon(req);
-
   console.info(`forecast fetching for ${lat}, ${lon}`);
 
-  const url = `api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
+  const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
 
   const response = await fetch(url).catch((e) => {
     console.error(e);
@@ -59,7 +58,7 @@ app.get("/forecast", async (req, res) => {
 app.get("/weather-map", async (req, res) => {
   const { lat, lon } = getTrimmedLatLon(req);
 
-  const url = `api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
+  const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
   // TODO: Look into displaying weather data via
   // https://github.com/google/maps-for-work-samples/blob/master/samples/maps/OpenWeatherMapLayer/OpenWeatherMapLayer.pdf
   const response = await fetch(url).catch((e) => {
@@ -76,7 +75,7 @@ app.get("/weather-map", async (req, res) => {
 app.get("/air-pollution", async (req, res) => {
   const { lat, lon } = getTrimmedLatLon(req);
 
-  const url = `api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
+  const url = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
   // TODO: Historical
   // http://api.openweathermap.org/data/2.5/air_pollution/history?lat={lat}&lon={lon}&start={start}&end={end}&appid={API key}
 
@@ -91,7 +90,7 @@ app.get("/air-pollution", async (req, res) => {
 });
 
 // * https://openweathermap.org/api/geocoding-api
-app.get("", (req, res) => {});
+// app.get("", (req, res) => {});
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);

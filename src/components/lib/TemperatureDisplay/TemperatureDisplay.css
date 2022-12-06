@@ -1,0 +1,24 @@
+.temperatureDisplay {
+  border: 1px solid red;
+  display: flex;
+}
+
+.temp {
+  font-size: x-large;
+}
+
+.feelsLike {
+  font-size: medium;
+}
+
+.minMax {
+  display: flex;
+  font-size: small;
+}
+.min {
+  padding: 5px;
+}
+
+.max {
+  padding: 5px;
+}
