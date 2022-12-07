@@ -32,7 +32,7 @@ const Carousel = ({ carouselData }) => {
   };
 
   return carouselData != null ? (
-    <div>
+    <div className="carousel">
       <div className="weatherCarousel">
         {tiles.map((fd) => (
           <CarouselTile tileData={fd} key={fd.dt} />

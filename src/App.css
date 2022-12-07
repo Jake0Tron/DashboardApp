@@ -7,6 +7,8 @@
 
 .container {
   overflow: auto;
-  overflow-wrap: break-word;
+  border-radius: 0.5rem;
   margin: 0.5rem;
+  padding: 0.25rem;
+  box-shadow: 4px 4px 6px, inset 0px 0px 2px #888;
 }

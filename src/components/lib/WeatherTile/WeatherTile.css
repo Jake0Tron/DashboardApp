@@ -14,6 +14,7 @@
 
 .icon {
   border: 1px solid #eee;
+  margin: 0.5rem;
   border-radius: 50%;
   width: 50px;
   aspect-ratio: 1 / 1;

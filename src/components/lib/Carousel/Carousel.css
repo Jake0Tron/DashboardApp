@@ -2,6 +2,9 @@
   /* border: 1px solid orangered; */
   padding: 0.5rem;
 }
+.weatherCarousel {
+  display: flex;
+}
 .buttonContainer {
   display: flex;
   justify-content: space-evenly;

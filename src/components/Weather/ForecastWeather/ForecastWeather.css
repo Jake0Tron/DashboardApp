@@ -1,13 +1,8 @@
 .forecastWeather {
-  border: 1px solid black;
-  border-radius: 0.5rem;
-  margin: 0.5rem;
-  padding: 0.25rem;
   width: 600px;
-  box-shadow: 4px 4px 6px;
 }
 
-.weatherCarousel {
-  display: flex;
-  overflow: auto;
+.name {
+  font-size: xx-large;
+  text-align: center;
 }
