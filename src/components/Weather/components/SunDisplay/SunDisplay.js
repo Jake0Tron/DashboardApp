@@ -1,5 +1,5 @@
 import React from "react";
-import { getTimeFromDate } from "../../../util";
+import { getTimeFromDate } from "../../util";
 import Loading from "../Loading";
 import "./SunDisplay.css";
 

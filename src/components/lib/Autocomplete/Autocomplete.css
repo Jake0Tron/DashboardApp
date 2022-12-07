@@ -1,0 +1,11 @@
+.dropdown {
+  border: 1px solid black;
+}
+.dropdownValue {
+  padding: 2px;
+  border: 1px solid gray;
+}
+
+.dropdownValue:hover {
+  background-color: aqua;
+}

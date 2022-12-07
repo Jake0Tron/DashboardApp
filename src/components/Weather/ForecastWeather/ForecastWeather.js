@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import useCurrentLocation from "../../hooks/useCurrentLocation";
-import { Carousel, Loading } from "../../lib";
+import useCurrentLocation from "../../../hooks/useCurrentLocation";
+import { Carousel, Loading } from "../components";
 import "./ForecastWeather.css";
 
 const fetchWeatherData = async (lat, long) => {

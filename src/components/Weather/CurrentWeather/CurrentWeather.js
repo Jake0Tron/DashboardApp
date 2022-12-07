@@ -6,8 +6,8 @@ import {
   TemperatureDisplay,
   WeatherTile,
   WindDisplay,
-} from "../../lib";
-import useCurrentLocation from "../../hooks/useCurrentLocation";
+} from "../components";
+import useCurrentLocation from "../../../hooks/useCurrentLocation";
 import "./CurrentWeather.css";
 
 const fetchWeatherData = async (lat, long) => {

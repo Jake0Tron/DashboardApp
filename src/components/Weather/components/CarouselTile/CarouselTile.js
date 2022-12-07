@@ -1,6 +1,6 @@
 import React from "react";
 import { Loading, TemperatureDisplay, WindDisplay, WeatherTile } from "../";
-import { getTimeFromDate } from "../../../util";
+import { getTimeFromDate } from "../../util";
 import "./CarouselTile.css";
 
 const CarouselTile = ({ tileData }) => {
