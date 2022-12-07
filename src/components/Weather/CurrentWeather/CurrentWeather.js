@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import {
   CloudDisplay,
+  Loading,
   SunDisplay,
   TemperatureDisplay,
   WeatherTile,
@@ -32,21 +33,17 @@ const CurrentWeather = () => {
     }
   }, [currentLocation]);
 
-  return (
+  return weatherData != null ? (
     <div className="container currentWeatherContainer">
-      {weatherData != null ? (
-        <div>
-          <div className="name">{weatherData.name}</div>
-          <WeatherTile tileData={weatherData.weather[0]} />
-          <TemperatureDisplay tempData={weatherData.main} />
-          <WindDisplay windData={weatherData.wind} />
-          <CloudDisplay cloudData={weatherData.clouds} />
-          <SunDisplay sunData={weatherData.sys} />
-        </div>
-      ) : (
-        "Loading..."
-      )}
+      <div className="name">{weatherData.name}</div>
+      <WeatherTile tileData={weatherData.weather[0]} />
+      <TemperatureDisplay tempData={weatherData.main} />
+      <WindDisplay windData={weatherData.wind} />
+      <CloudDisplay cloudData={weatherData.clouds} />
+      <SunDisplay sunData={weatherData.sys} />
     </div>
+  ) : (
+    <Loading animationType="bars" />
   );
 };
 

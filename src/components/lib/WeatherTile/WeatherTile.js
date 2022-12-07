@@ -1,4 +1,5 @@
 import React from "react";
+import Loading from "../Loading";
 import "./WeatherTile.css";
 
 const WeatherTile = ({ tileData }) => {
@@ -12,7 +13,7 @@ const WeatherTile = ({ tileData }) => {
       <div className="description">{tileData.description}</div>
     </div>
   ) : (
-    <div>Loading...</div>
+    <Loading />
   );
 };
 

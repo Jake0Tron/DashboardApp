@@ -1,11 +1,13 @@
 .currentWeatherContainer {
   border: 1px solid black;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
   display: flex;
   flex-direction: column;
   box-shadow: 4px 4px 6px;
 }
 
 .name {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   font-size: xx-large;
 }

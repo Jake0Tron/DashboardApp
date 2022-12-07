@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { CarouselTile } from "../";
+import { CarouselTile, Loading } from "../";
 import "./Carousel.css";
 
 const getTilesToShow = (tiles, index, numToShow) => {
@@ -51,7 +51,7 @@ const Carousel = ({ carouselData }) => {
       </div>
     </div>
   ) : (
-    <div> Loading... </div>
+    <Loading />
   );
 };
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { getTimeFromDate } from "../../../util";
+import Loading from "../Loading";
 import "./SunDisplay.css";
 
 const SunDisplay = ({ sunData }) => {
@@ -9,7 +10,7 @@ const SunDisplay = ({ sunData }) => {
       <div className="sunset">Sunset: {getTimeFromDate(sunData.sunset)}</div>
     </div>
   ) : (
-    <div>Loading...</div>
+    <Loading />
   );
 };
 

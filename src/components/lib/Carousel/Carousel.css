@@ -1,5 +1,6 @@
 .carousel {
-  border: 1px solid orangered;
+  /* border: 1px solid orangered; */
+  padding: 0.5rem;
 }
 .buttonContainer {
   display: flex;
@@ -10,7 +11,6 @@ button {
   padding: 0.5em 1.5em;
   border: 1px solid black;
   border-radius: 0.25em;
-  background-color: burlywood;
   box-shadow: 0.15em 0.15em 0.25em;
   cursor: pointer;
 }

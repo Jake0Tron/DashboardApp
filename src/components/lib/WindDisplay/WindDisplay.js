@@ -1,4 +1,5 @@
 import React from "react";
+import Loading from "../Loading";
 import "./WindDisplay.css";
 
 const WindDisplay = ({ windData }) => {
@@ -24,7 +25,7 @@ const WindDisplay = ({ windData }) => {
       </div>
     </div>
   ) : (
-    <div>Loading...</div>
+    <Loading />
   );
 };
 export default WindDisplay;

@@ -1,5 +1,6 @@
 .weatherTile {
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  border-radius: 0.25rem;
   display: flex;
   flex-direction: column;
   background-color: lightgray;
@@ -12,8 +13,8 @@
 }
 
 .icon {
-  border: 1px solid gray;
-  border-radius: 0.25rem;
+  border: 1px solid #eee;
+  border-radius: 50%;
   width: 50px;
   aspect-ratio: 1 / 1;
 }

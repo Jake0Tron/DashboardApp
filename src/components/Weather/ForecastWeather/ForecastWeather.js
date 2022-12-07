@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import useCurrentLocation from "../../hooks/useCurrentLocation";
-import { Carousel } from "../../lib";
+import { Carousel, Loading } from "../../lib";
 import "./ForecastWeather.css";
 
 const fetchWeatherData = async (lat, long) => {
@@ -31,7 +31,7 @@ const ForecastWeather = () => {
       <Carousel carouselData={forecastData.list} />
     </div>
   ) : (
-    <div>Loading...</div>
+    <Loading />
   );
 };
 

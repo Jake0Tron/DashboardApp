@@ -1,14 +1,12 @@
 import React from "react";
 import "./CloudDisplay.css";
+import { Loading } from "../";
 
-/**
- * Cloudiness, %
- */
 const CloudDisplay = ({ cloudData }) => {
   return cloudData != null ? (
-    <div className="cloudDisplay">Cloudiness: {cloudData.all}%</div>
+    <div className="cloudDisplay">Cloud cover: {cloudData.all}%</div>
   ) : (
-    <div>Loading...</div>
+    <Loading />
   );
 };
 
