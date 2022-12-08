@@ -126,7 +126,7 @@ app.get("/air-pollution", async (req, res) => {
 // NEWS
 //================================
 app.get("/news", async (req, res) => {
-  // TODO look into searches: https://newsapi.org/docs/get-started#search
+  // TODO: Look into search parameters
   const { topics } = req.query;
   console.log(`fetching news for ${topics}`);
 
@@ -135,7 +135,8 @@ app.get("/news", async (req, res) => {
   var url =
     "https://newsapi.org/v2/everything?" +
     `q=${topics}&` +
-    "from=2022-12-07&" +
+    // "from=2022-12-07&" +
+    "language=en&" +
     "sortBy=popularity&" +
     `apiKey=${NEWS_API_KEY}`;
 

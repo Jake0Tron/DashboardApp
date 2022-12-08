@@ -1,5 +1,5 @@
 import React from "react";
-import Loading from "../Loading";
+import Loading from "../../../lib/Loading";
 import "./WeatherTile.css";
 
 const WeatherTile = ({ tileData }) => {

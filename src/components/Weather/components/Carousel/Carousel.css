@@ -8,9 +8,10 @@
 .buttonContainer {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 0.5em;
 }
 
-button {
+.button {
   padding: 0.5em 1.5em;
   border: 1px solid black;
   border-radius: 0.25em;

@@ -1,6 +1,8 @@
 .currentWeatherContainer {
   display: flex;
   flex-direction: column;
+  background-color: #eee;
+  width: 250px;
 }
 
 .name {

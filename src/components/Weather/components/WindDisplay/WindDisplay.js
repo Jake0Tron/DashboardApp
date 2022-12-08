@@ -1,26 +1,51 @@
 import React from "react";
-import Loading from "../Loading";
+import Loading from "../../../lib/Loading";
 import "./WindDisplay.css";
+
+// return a Compass Direction from degrees provided
+const degToDir = (deg) => {
+  let portion = 45 / 2;
+  const directions = [
+    "X",
+    "N",
+    "NE",
+    "NE",
+    "E",
+    "E",
+    "SE",
+    "SE",
+    "S",
+    "S",
+    "SW",
+    "SW",
+    "W",
+    "W",
+    "NW",
+    "NW",
+    "N",
+  ];
+
+  for (let i = 1; i < directions.length; i++) {
+    if (deg <= i * portion) {
+      return directions[i];
+    }
+  }
+};
 
 const WindDisplay = ({ windData }) => {
   const units = <span>km/h</span>;
-  const deg = <span>&deg;</span>;
   return windData != null ? (
     <div className="windDisplay">
       <div className="speedDirection">
         <div className="speed">
-          {windData.speed}
+          Speed: {windData.speed}
           {units}
         </div>
-        &nbsp;@&nbsp;
-        <div className="direction">
-          {windData.deg}
-          {/* TODO: translate degrees to direction */}
-          {deg}
-        </div>
+        &nbsp;
+        <div className="direction">{degToDir(windData.deg)}</div>
       </div>
       <div className="gust">
-        {windData.gust}
+        Gusts: {windData.gust}
         {units}
       </div>
     </div>

@@ -1,0 +1,19 @@
+.newsTitle {
+}
+
+.title {
+  font-size: large;
+}
+.nameDate {
+  display: flex;
+  align-items: baseline;
+  font-size: small;
+}
+
+.description {
+  font-size: medium;
+  margin: 0.5rem 0.25rem;
+}
+.readUrl {
+  font-size: small;
+}

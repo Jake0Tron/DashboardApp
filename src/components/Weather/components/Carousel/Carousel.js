@@ -39,10 +39,15 @@ const Carousel = ({ carouselData }) => {
         ))}
       </div>
       <div className="buttonContainer">
-        <button disabled={tileIndex === 0} onClick={onPrevClick}>
+        <button
+          className="carouselButton"
+          disabled={tileIndex === 0}
+          onClick={onPrevClick}
+        >
           &lt;
         </button>
         <button
+          className="carouselButton"
           disabled={tileIndex === carouselData.length - NUM_TILES - 1}
           onClick={onNextClick}
         >

@@ -1,0 +1,9 @@
+.newsContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  max-height: 250px;
+}

@@ -1,0 +1,12 @@
+.collapseButton {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.content {
+}
+
+.hidden {
+  /* display: none; */
+  animation: close 0.5s ease;
+}

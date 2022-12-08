@@ -3,6 +3,7 @@ import {
   CurrentWeather,
   ForecastWeather,
 } from "./components/Weather";
+import { NewsFeed } from "./components/News";
 import { AutoComplete } from "./components/lib";
 import "./App.css";
 
@@ -35,7 +36,7 @@ function App() {
       <CurrentWeather />
       <ForecastWeather />
       {/* <AirPollutionWeather /> */}
-      <AutoComplete />
+      <NewsFeed />
     </div>
   );
 }

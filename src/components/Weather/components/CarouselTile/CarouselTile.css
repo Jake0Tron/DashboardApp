@@ -3,7 +3,9 @@
   border-radius: 0.5rem;
   padding: 0.25em;
   margin: 0.25em;
-  width: 185px;
-  height: 285px;
+  width: 200px;
+
   box-shadow: 2px 2px 6px;
+  display: flex;
+  flex-direction: column;
 }

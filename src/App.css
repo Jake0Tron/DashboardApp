@@ -1,3 +1,6 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .App {
   display: flex;
   flex-wrap: wrap;
@@ -11,4 +14,24 @@
   margin: 0.5rem;
   padding: 0.25rem;
   box-shadow: 4px 4px 6px, inset 0px 0px 2px #888;
+  max-height: 500px;
+  max-width: 600px;
+}
+
+@keyframes open {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes close {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
 }

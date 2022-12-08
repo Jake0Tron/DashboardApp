@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import {
   CloudDisplay,
   Loading,
+  PressureDisplay,
   SunDisplay,
   TemperatureDisplay,
   WeatherTile,
@@ -9,6 +10,8 @@ import {
 } from "../components";
 import useCurrentLocation from "../../../hooks/useCurrentLocation";
 import "./CurrentWeather.css";
+import HumidityDisplay from "../components/HumidityDisplay";
+import { CollapsibleSection } from "../../lib";
 
 const fetchWeatherData = async (lat, long) => {
   const resp = await fetch(
@@ -38,9 +41,13 @@ const CurrentWeather = () => {
       <div className="name">{weatherData.name}</div>
       <WeatherTile tileData={weatherData.weather[0]} />
       <TemperatureDisplay tempData={weatherData.main} />
-      <WindDisplay windData={weatherData.wind} />
-      <CloudDisplay cloudData={weatherData.clouds} />
-      <SunDisplay sunData={weatherData.sys} />
+      <CollapsibleSection>
+        <WindDisplay windData={weatherData.wind} />
+        <CloudDisplay cloudData={weatherData.clouds} />
+        <SunDisplay sunData={weatherData.sys} />
+        <PressureDisplay pressureData={weatherData.main} />
+        <HumidityDisplay humidityData={weatherData.main} />
+      </CollapsibleSection>
     </div>
   ) : (
     <Loading animationType="bars" />
