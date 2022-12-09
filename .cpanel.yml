@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - node run build
+    - node run deploy
