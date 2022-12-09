@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import NewsArticle from "../NewsArticle";
-import { Loading } from "../../lib";
+import { Loading, SearchBar } from "../../../components/lib";
 import "./NewsFeed.css";
 
 const getNewsData = async (topics) => {
@@ -39,8 +39,8 @@ const NewsFeed = () => {
       window.confirm(`Do you want to include ${latestTopic} in your search?`)
     ) {
       searchTopics.add(latestTopic);
+      setTopics(Array.from(searchTopics));
       setLatestTopic("");
-      setTopics(searchTopics);
     }
 
     getNewsData(Array.from(searchTopics)).then((newsData) => {
@@ -64,14 +64,23 @@ const NewsFeed = () => {
     setTopics(Array.from(uniqTopics));
   };
 
+  const onSearchKeyDown = (e) => {
+    // if we hit enter, add a topic
+    if (e.which === 13 && !e.ctrlKey) {
+      console.log(topics);
+      onAddTopicClick(latestTopic);
+    } else if (e.which === 13 && e.ctrlKey) {
+      // ctrl+enter to search
+      onSearchButtonClick();
+    }
+  };
   return (
     <div className="container newsFeed">
       <div>News Feed</div>
-      <input
-        type="string"
-        value={latestTopic}
-        placeholder="Search for your news topic"
+      <SearchBar
         onChange={(e) => setLatestTopic(e.target.value)}
+        value={latestTopic}
+        onKeyDown={onSearchKeyDown}
       />
       <button onClick={(e) => onAddTopicClick(latestTopic)}>
         Add to list of topics
@@ -89,13 +98,9 @@ const NewsFeed = () => {
         <Loading />
       ) : (
         <div className="articles">
-          {newsData != null ? (
-            <div>
-              {newsData.map((news) => (
-                <NewsArticle newsData={news} />
-              ))}
-            </div>
-          ) : null}
+          {newsData != null
+            ? newsData.map((news) => <NewsArticle newsData={news} />)
+            : null}
         </div>
       )}
     </div>
