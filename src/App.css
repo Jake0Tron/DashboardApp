@@ -14,6 +14,7 @@ body {
   margin: 0.5rem;
   padding: 0.25rem;
   box-shadow: 4px 4px 6px, inset 0px 0px 2px #888;
+  background-color: #eee;
   max-height: 500px;
   max-width: 600px;
 }

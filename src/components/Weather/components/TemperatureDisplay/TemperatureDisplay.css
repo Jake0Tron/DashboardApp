@@ -15,22 +15,24 @@
 
 .feelsLike {
   font-size: small;
-  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .minMax {
   display: flex;
   font-size: small;
-  text-align: center;
+  justify-content: space-between;
 }
 .min {
   padding: 2px 0;
-  /* margin: 2px; */
-  border: 1px solid black;
+  margin: 2px;
+  /* border: 1px solid black; */
 }
 
 .max {
-  padding: 2px;
-  /* margin: 2px; */
-  border: 1px solid black;
+  padding: 2px 0;
+  margin: 2px;
+  /* border: 1px solid black; */
 }

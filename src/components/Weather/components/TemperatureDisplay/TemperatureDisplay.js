@@ -11,12 +11,10 @@ const TemperatureDisplay = ({ tempData }) => {
       <div>
         <div className="feelsLike">
           Feels like {deg(Math.round(tempData.feels_like))}
-          <div className="minMax">
-            <div className="min">Low: {deg(Math.round(tempData.temp_min))}</div>
-            <div className="max">
-              High: {deg(Math.round(tempData.temp_max))}
-            </div>
-          </div>
+        </div>
+        <div className="minMax">
+          <div className="min">Low: {deg(Math.round(tempData.temp_min))}</div>
+          <div className="max">High: {deg(Math.round(tempData.temp_max))}</div>
         </div>
       </div>
     </div>
