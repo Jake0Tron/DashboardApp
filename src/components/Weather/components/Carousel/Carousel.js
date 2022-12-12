@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { CarouselTile, Loading } from "../";
-import "./Carousel.css";
+import "./Carousel.scss";
 
 const getTilesToShow = (tiles, index, numToShow) => {
   // return numToShow number of tiles from index to end

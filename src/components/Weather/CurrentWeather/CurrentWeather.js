@@ -9,9 +9,9 @@ import {
   WindDisplay,
 } from "../components";
 import useCurrentLocation from "../../../hooks/useCurrentLocation";
-import "./CurrentWeather.css";
 import HumidityDisplay from "../components/HumidityDisplay";
 import { CollapsibleSection } from "../../lib";
+import "./CurrentWeather.scss";
 
 const fetchWeatherData = async (lat, long) => {
   const resp = await fetch(

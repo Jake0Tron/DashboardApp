@@ -1,8 +1,8 @@
 import React from "react";
-import "./NewsTitle.css";
+import "./NewsTitle.scss";
 
 const NewsTitle = ({ newsData }) => {
-  const { title, author, description, publishedAt, source, url } = newsData;
+  const { title, author, description, publishedAt } = newsData;
   return (
     <div className="newsTitle">
       <div className="title">{title}</div>

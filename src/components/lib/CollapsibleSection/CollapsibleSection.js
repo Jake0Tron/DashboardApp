@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./CollapsibleSection.css";
+import "./CollapsibleSection.scss";
 
 const CollapsibleSection = ({ children }) => {
   const [open, setOpen] = useState(true);

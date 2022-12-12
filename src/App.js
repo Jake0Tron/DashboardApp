@@ -4,8 +4,7 @@ import {
   ForecastWeather,
 } from "./components/Weather";
 import { NewsFeed } from "./components/News";
-import { AutoComplete } from "./components/lib";
-import "./App.css";
+import "./App.scss";
 
 /* TODO: 
   - Set up a series of small widgets

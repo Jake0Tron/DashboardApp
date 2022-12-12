@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "./Autocomplete.css";
+import "./Autocomplete.scss";
 
-const AutoComplete = ({}) => {
+const AutoComplete = () => {
   const [autocompleteValues, setAutocompleteValues] = useState([]),
     [filteredValues, setFilteredValues] = useState([]),
     [inputText, setInputText] = useState(""),

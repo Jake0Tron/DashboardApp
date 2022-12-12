@@ -1,6 +1,6 @@
 import React from "react";
 import Loading from "../../../lib/Loading";
-import "./PressureDisplay.css";
+import "./PressureDisplay.scss";
 
 const PressureDisplay = ({ pressureData }) => {
   const { grnd_level, sea_level, pressure } = pressureData;

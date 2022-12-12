@@ -1,0 +1,33 @@
+.newsFeed {
+  border: 1px solid #666;
+  overflow: hidden;
+  height: 100%;
+
+  .topicList {
+    background-color: #ccc;
+    border-radius: 2em;
+
+    display: flex;
+    align-items: center;
+    min-height: 2rem;
+  }
+  .topic {
+    border: 1px solid black;
+    background-color: #eee;
+    padding: 0 1rem;
+    margin: 0.25rem;
+    border-radius: 2em;
+    box-shadow: 1px 1px 3px #666;
+    .removeTopic {
+      border-left: 1px solid black;
+      padding-left: 0.25rem;
+    }
+    .removeTopic:hover {
+      background-color: #ccc;
+    }
+  }
+  .articles {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import "./NewsContent.css";
+import "./NewsContent.scss";
 
 const NewsContent = ({ newsContent }) => {
   const { content, urlToImage, url, source } = newsContent;
@@ -7,8 +7,8 @@ const NewsContent = ({ newsContent }) => {
 
   return (
     <div className="newsContent">
-      <div className="content">{content}</div>
       <img src={urlToImage} alt="img" />
+      <div className="content">{content}</div>
       <div className="readUrl">
         Read this article on{" "}
         <a href={url} target="_blank" rel="noreferrer">

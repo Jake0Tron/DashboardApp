@@ -1,6 +1,6 @@
 import React from "react";
 import Loading from "../../../lib/Loading";
-import "./WindDisplay.css";
+import "./WindDisplay.scss";
 
 // return a Compass Direction from degrees provided
 const degToDir = (deg) => {

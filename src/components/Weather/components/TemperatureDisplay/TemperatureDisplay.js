@@ -1,6 +1,6 @@
 import React from "react";
-import { Loading, PressureDisplay } from "../";
-import "./TemperatureDisplay.css";
+import { Loading } from "../";
+import "./TemperatureDisplay.scss";
 
 const TemperatureDisplay = ({ tempData }) => {
   const deg = (temp) => <span>{temp}&deg;C</span>; // TODO handle other formats

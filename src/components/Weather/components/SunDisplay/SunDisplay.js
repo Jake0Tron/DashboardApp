@@ -1,7 +1,7 @@
 import React from "react";
 import { getTimeFromDate } from "../../util";
 import Loading from "../../../lib/Loading";
-import "./SunDisplay.css";
+import "./SunDisplay.scss";
 
 const SunDisplay = ({ sunData }) => {
   return sunData != null ? (

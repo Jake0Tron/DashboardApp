@@ -9,7 +9,7 @@ import {
 import { CollapsibleSection } from "../../../lib";
 import { getTimeFromDate } from "../../util";
 import HumidityDisplay from "../HumidityDisplay";
-import "./CarouselTile.css";
+import "./CarouselTile.scss";
 
 const CarouselTile = ({ tileData }) => {
   return tileData != null ? (

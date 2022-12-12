@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NewsContent, NewsTitle } from "../components/";
 
-import "./NewsArticle.css";
+import "./NewsArticle.scss";
 
 const NewsArticle = ({ newsData }) => {
   const [showContent, setShowContent] = useState(false);

@@ -1,6 +1,6 @@
 import React from "react";
-import "./CloudDisplay.css";
 import { Loading } from "../";
+import "./CloudDisplay.scss";
 
 const CloudDisplay = ({ cloudData }) => {
   return cloudData != null ? (

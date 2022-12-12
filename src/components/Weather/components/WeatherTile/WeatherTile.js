@@ -1,6 +1,6 @@
 import React from "react";
 import Loading from "../../../lib/Loading";
-import "./WeatherTile.css";
+import "./WeatherTile.scss";
 
 const WeatherTile = ({ tileData }) => {
   return tileData != null ? (

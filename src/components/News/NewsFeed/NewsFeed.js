@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import NewsArticle from "../NewsArticle";
 import { Loading, SearchBar } from "../../../components/lib";
-import "./NewsFeed.css";
+import "./NewsFeed.scss";
 
 const getNewsData = async (topics) => {
   const urlString = topics.map((t) => `"${encodeURIComponent(t)}"`).join(",");
@@ -67,7 +67,6 @@ const NewsFeed = () => {
   const onSearchKeyDown = (e) => {
     // if we hit enter, add a topic
     if (e.which === 13 && !e.ctrlKey) {
-      console.log(topics);
       onAddTopicClick(latestTopic);
     } else if (e.which === 13 && e.ctrlKey) {
       // ctrl+enter to search
@@ -89,8 +88,11 @@ const NewsFeed = () => {
 
       <div className="topicList">
         {topics.map((topic) => (
-          <div className="topic" onClick={() => removeTopic(topic)}>
-            {topic}
+          <div className="topic" key={topic}>
+            {topic}{" "}
+            <span className="removeTopic" onClick={() => removeTopic(topic)}>
+              x
+            </span>
           </div>
         ))}
       </div>
@@ -99,7 +101,9 @@ const NewsFeed = () => {
       ) : (
         <div className="articles">
           {newsData != null
-            ? newsData.map((news) => <NewsArticle newsData={news} />)
+            ? newsData.map((news) => (
+                <NewsArticle newsData={news} key={news.url} />
+              ))
             : null}
         </div>
       )}
