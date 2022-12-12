@@ -1,3 +1,5 @@
+// @flow
+
 import React from "react";
 import { Loading } from "../";
 import "./CloudDisplay.scss";

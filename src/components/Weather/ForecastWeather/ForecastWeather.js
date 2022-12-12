@@ -1,3 +1,5 @@
+// @flow
+
 import React, { useState, useEffect } from "react";
 import useCurrentLocation from "../../../hooks/useCurrentLocation";
 import { Carousel, Loading } from "../components";

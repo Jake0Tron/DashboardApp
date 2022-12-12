@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react";
+// @flow
+
+import React from "react";
 import "./AirPollutionWeather.scss";
 
 const AirPollutionWeather = () => {

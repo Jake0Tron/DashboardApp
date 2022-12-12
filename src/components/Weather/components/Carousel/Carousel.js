@@ -1,3 +1,5 @@
+// @flow
+
 import React, { useState } from "react";
 import { CarouselTile, Loading } from "../";
 import "./Carousel.scss";

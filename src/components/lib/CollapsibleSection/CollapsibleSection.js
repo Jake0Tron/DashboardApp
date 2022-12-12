@@ -1,3 +1,5 @@
+// @flow
+
 import React, { useState } from "react";
 import "./CollapsibleSection.scss";
 
