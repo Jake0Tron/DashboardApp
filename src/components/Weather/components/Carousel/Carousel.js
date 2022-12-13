@@ -10,9 +10,8 @@ const getTilesToShow = (tiles, index, numToShow) => {
   return tiles.slice(index, index + numToShow);
 };
 
-const Carousel = ({ carouselData }) => {
-  // TODO: show 3 tiles at a time, iterating through list
-  const NUM_TILES = 3;
+const NUM_TILES = 2;
+const Carousel = ({ carouselData, tileCount = NUM_TILES }) => {
   const [tileIndex, setTileIndex] = useState(0);
   const [tiles, setTiles] = useState(
     getTilesToShow(carouselData, tileIndex, NUM_TILES)
