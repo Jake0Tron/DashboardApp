@@ -1,4 +1,3 @@
-// @flow
 import React from "react";
 import Loading from "../../../lib/Loading";
 import "./WindDisplay.scss";

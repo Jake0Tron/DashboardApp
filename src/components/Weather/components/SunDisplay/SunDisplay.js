@@ -1,4 +1,3 @@
-// @flow
 import React from "react";
 import { getTimeFromDate } from "../../util";
 import Loading from "../../../lib/Loading";

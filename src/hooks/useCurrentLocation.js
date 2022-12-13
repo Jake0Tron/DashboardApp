@@ -1,5 +1,3 @@
-// @flow
-
 import { useState, useEffect } from "react";
 
 const useCurrentLocation = () => {

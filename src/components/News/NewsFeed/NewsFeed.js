@@ -1,5 +1,3 @@
-// @flow
-
 import React, { useEffect, useState } from "react";
 import NewsArticle from "../NewsArticle";
 import { Loading, SearchBar } from "../../../components/lib";
