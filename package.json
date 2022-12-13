@@ -36,8 +36,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint src",
-    "deploy": "serve -s build"
+    "lint": "eslint src"
   },
   "eslintConfig": {
     "extends": [
