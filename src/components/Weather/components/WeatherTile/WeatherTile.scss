@@ -1,11 +1,13 @@
+@import "../../../../theme.scss";
+
 .weatherTile {
-  border: 1px solid black;
-  border-radius: 3px;
+  // border: 1px solid $colour-black;
+  border-radius: $size-x-small;
   display: flex;
   flex-direction: column;
-  background-color: lightgray;
+  background-color: $colour-primary-100;
   align-items: center;
-  box-shadow: 0 2px 4px #666;
+  box-shadow: 0 2px 4px $colour-primary-400;
 }
 
 .description {

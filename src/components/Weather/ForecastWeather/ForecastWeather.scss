@@ -1,9 +1,11 @@
+@import "../../../theme.scss";
+
 .forecastWeather {
   width: 600px;
-  background-color: #eee;
-}
+  background-color: $colour-primary-100;
 
-.name {
-  font-size: xx-large;
-  text-align: center;
+  .name {
+    font-size: xx-large;
+    text-align: center;
+  }
 }

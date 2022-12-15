@@ -1,11 +1,13 @@
+@import "../../../theme.scss";
+
 .currentWeatherContainer {
   display: flex;
   flex-direction: column;
-  background-color: #eee;
-  width: 250px;
-}
+  background-color: $colour-primary-200;
+  width: $container-size-small;
 
-.name {
-  font-size: xx-large;
-  text-align: center;
+  .name {
+    font-size: xx-large;
+    text-align: center;
+  }
 }

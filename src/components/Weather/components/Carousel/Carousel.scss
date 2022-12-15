@@ -1,20 +1,21 @@
-.carousel {
-  /* border: 1px solid orangered; */
-  padding: 3px;
-}
-.weatherCarousel {
-  display: flex;
-}
-.buttonContainer {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 0.5em;
-}
+@import "../../../../theme.scss";
 
-.button {
-  padding: 0.5em 1.5em;
-  border: 1px solid black;
-  border-radius: 0.25em;
-  box-shadow: 0.15em 0.15em 0.25em;
-  cursor: pointer;
+.carousel {
+  padding: $size-x-small;
+
+  .weatherCarousel {
+    display: flex;
+  }
+  .buttonContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: $size-xx-small;
+  }
+
+  .button {
+    padding: $size-xx-small $size-small;
+    border-radius: $size-small;
+    box-shadow: 0.15em 0.15em 0.25em;
+    cursor: pointer;
+  }
 }

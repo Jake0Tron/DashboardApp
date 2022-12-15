@@ -1,3 +1,4 @@
+@import "./theme.scss";
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -8,13 +9,12 @@ body {
   padding: 2px;
 
   .container {
-    // overflow: hidden;
-    border-radius: 3px;
+    border-radius: $size-med;
     margin: 3px;
-    padding: 3px;
-    box-shadow: 4px 4px 6px, inset 0px 0px 2px #888;
-    background-color: #eee;
-    max-height: 500px;
-    max-width: 600px;
+    padding: $size-med;
+    box-shadow: $size-small $size-small $size-med $colour-primary-500,
+      inset 1px 0 4px $colour-primary-500;
+    max-height: $container-size-large;
+    max-width: $container-size-large;
   }
 }

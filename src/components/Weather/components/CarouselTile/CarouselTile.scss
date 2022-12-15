@@ -1,11 +1,14 @@
-.carouselTile {
-  border: 1px solid black;
-  border-radius: 3px;
-  padding: 0.25em;
-  margin: 0.25em;
-  width: 200px;
+@import "../../../../theme.scss";
 
-  box-shadow: 2px 2px 6px;
+.carouselTile {
+  border: 1px solid #999;
+  border-radius: $size-med-small;
+  padding: $size-small;
+  margin: $size-x-small;
+  width: $container-size-small;
+
+  box-shadow: $size-xx-small $size-xx-small $size-small;
   display: flex;
   flex-direction: column;
+  background-color: $colour-primary-200;
 }
