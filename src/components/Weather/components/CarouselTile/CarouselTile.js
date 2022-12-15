@@ -13,8 +13,8 @@ import "./CarouselTile.scss";
 
 const CarouselTile = ({ tileData }) => {
   return tileData != null ? (
-    <div className="carouselTile">
-      <div>
+    <div className="carouselTile shadowed">
+      <div className="dateTime">
         {getTimeFromDate(tileData.dt)}
         {"-"}
         {new Date(tileData.dt * 1000).toLocaleDateString()}

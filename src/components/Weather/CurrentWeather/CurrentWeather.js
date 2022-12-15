@@ -37,7 +37,7 @@ const CurrentWeather = () => {
   }, [currentLocation]);
 
   return weatherData != null ? (
-    <div className="container currentWeatherContainer">
+    <div className="container shadowed currentWeatherContainer">
       <div className="name">{weatherData.name}</div>
       <WeatherTile tileData={weatherData.weather[0]} />
       <TemperatureDisplay tempData={weatherData.main} />

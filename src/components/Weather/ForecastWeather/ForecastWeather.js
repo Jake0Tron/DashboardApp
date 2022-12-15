@@ -26,7 +26,7 @@ const ForecastWeather = () => {
   }, [currentLocation]);
 
   return forecastData != null ? (
-    <div className="container forecastWeather">
+    <div className="container shadowed forecastWeather">
       <div className="name">{forecastData.city.name} Forecast</div>
       <Carousel carouselData={forecastData.list} />
     </div>

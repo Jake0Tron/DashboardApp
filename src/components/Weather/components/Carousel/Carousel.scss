@@ -1,11 +1,14 @@
 @import "../../../../theme.scss";
 
 .carousel {
-  padding: $size-x-small;
+  display: flex;
+  flex-direction: column;
 
   .weatherCarousel {
     display: flex;
+    justify-content: space-between;
   }
+
   .buttonContainer {
     display: flex;
     justify-content: space-evenly;

@@ -1,3 +1,5 @@
+@import "../../../theme.scss";
+
 .loading {
   margin: auto;
 
@@ -9,7 +11,7 @@
   width: 120px;
   height: 5px;
   margin: 5px;
-  background: linear-gradient(45deg, orange, #999);
+  background: linear-gradient(45deg, $colour-primary-300, $colour-primary-400);
   animation: bars 1s linear infinite;
 }
 
@@ -71,8 +73,8 @@
 }
 
 .spinner {
-  border: 12px solid #999;
-  border-top: 12px solid orange;
+  border: 12px solid $colour-primary-300;
+  border-top: 12px solid $colour-primary-400;
   border-radius: 50%;
   animation: spinner 4s linear infinite;
 }

@@ -5,9 +5,9 @@
   border-radius: $size-med-small;
   padding: $size-small;
   margin: $size-x-small;
-  width: $container-size-small;
-
-  box-shadow: $size-xx-small $size-xx-small $size-small;
+  min-width: $container-size-small;
+  min-height: $container-size-med-small;
+  box-shadow: $size-xx-small $size-xx-small $size-small $colour-black;
   display: flex;
   flex-direction: column;
   background-color: $colour-primary-200;

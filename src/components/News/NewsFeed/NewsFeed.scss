@@ -1,33 +1,51 @@
+@import "../../../theme.scss";
+
 .newsFeed {
-  border: 1px solid #666;
   overflow: hidden;
   height: 100%;
+  min-width: $container-size-med;
+  max-width: $container-size-x-large;
+
+  .buttonContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: $size-xx-small;
+  }
 
   .topicList {
-    background-color: #ccc;
-    border-radius: 2em;
+    background-color: $colour-primary-300;
+    border-radius: $size-small;
+    border: 1px solid $colour-primary-500;
 
     display: flex;
     align-items: center;
-    min-height: 5px;
+    min-height: $size-med-large;
+    padding: $size-x-small;
+    margin: $size-small 0;
   }
+
   .topic {
-    border: 1px solid black;
-    background-color: #eee;
-    padding: 3px;
-    margin: 2px;
+    border: 1px solid $colour-black;
+    background-color: $colour-primary-200;
+    padding: $size-x-small;
+    margin: $size-xx-small;
     border-radius: 2em;
-    box-shadow: 1px 1px 3px #666;
+    // box-shadow: 1px 1px 3px #666;
+    font-size: $font-size-100;
+
     .removeTopic {
-      border-left: 1px solid black;
-      padding-left: 2px;
+      border-left: 1px solid $colour-black;
+      padding-left: $size-x-small;
     }
     .removeTopic:hover {
       background-color: #ccc;
+      cursor: pointer;
     }
   }
+
   .articles {
-    max-height: 400px;
+    padding: $size-xx-small;
+    max-height: $container-size-large;
     overflow-y: auto;
   }
 }

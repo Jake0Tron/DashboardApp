@@ -10,8 +10,9 @@ $size-large: 32px;
 $size-x-large: 48px;
 $size-xx-large: 64px;
 
-$container-size-x-small: 160px;
-$container-size-small: 200px;
+$container-size-x-small: 140px;
+$container-size-small: 180px;
+$container-size-med-small: 240px;
 $container-size-med: 360px;
 $container-size-large: 480px;
 $container-size-x-large: 600px;
@@ -30,29 +31,30 @@ $font-size-1000: 60px;
 $font-size-1100: 72px;
 
 // Colours
-$colour-primary-100: hsl(220, 65, 90);
-$colour-primary-200: hsl(220, 65, 80);
-$colour-primary-300: hsl(220, 65, 60);
-$colour-primary-400: hsl(220, 65, 40);
-$colour-primary-500: hsl(220, 65, 20);
+$colour-primary-100: hsl(220, 65%, 95%);
+$colour-primary-200: hsl(220, 65%, 87.5%);
+$colour-primary-300: hsl(220, 65%, 75%);
+$colour-primary-400: hsl(220, 65%, 60%);
+$colour-primary-500: hsl(220, 65%, 40%);
+$colour-primary-600: hsl(220, 65%, 15%);
 
-$colour-secondary-100: hsl(206, 47, 90);
-$colour-secondary-200: hsl(206, 47, 80);
-$colour-secondary-300: hsl(206, 47, 60);
-$colour-secondary-400: hsl(206, 47, 40);
-$colour-secondary-500: hsl(206, 47, 20);
+$colour-secondary-100: hsl(206, 47%, 90%);
+$colour-secondary-200: hsl(206, 47%, 80%);
+$colour-secondary-300: hsl(206, 47%, 60%);
+$colour-secondary-400: hsl(206, 47%, 40%);
+$colour-secondary-500: hsl(206, 47%, 20%);
 
-$colour-error-100: hsl(2, 67, 90);
-$colour-error-200: hsl(2, 67, 80);
-$colour-error-300: hsl(2, 67, 60);
-$colour-error-400: hsl(2, 67, 40);
-$colour-error-500: hsl(2, 67, 20);
+$colour-error-100: hsl(2, 67%, 90%);
+$colour-error-200: hsl(2, 67%, 80%);
+$colour-error-300: hsl(2, 67%, 60%);
+$colour-error-400: hsl(2, 67%, 40%);
+$colour-error-500: hsl(2, 67%, 20%);
 
-$colour-success-100: hsl(128, 35, 90);
-$colour-success-200: hsl(128, 35, 75);
-$colour-success-300: hsl(128, 35, 60);
-$colour-success-400: hsl(128, 35, 40);
-$colour-success-500: hsl(128, 35, 20);
+$colour-success-100: hsl(128, 35%, 90%);
+$colour-success-200: hsl(128, 35%, 75%);
+$colour-success-300: hsl(128, 35%, 60%);
+$colour-success-400: hsl(128, 35%, 40%);
+$colour-success-500: hsl(128, 35%, 20%);
 
-$colour-black: hsl(41, 100, 3);
-$colour-white: hsl(44, 58, 90);
+$colour-black: hsl(41, 100%, 3%);
+$colour-white: hsl(206, 100%, 98%);

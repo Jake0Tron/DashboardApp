@@ -4,7 +4,7 @@ import "./WeatherTile.scss";
 
 const WeatherTile = ({ tileData }) => {
   return tileData != null ? (
-    <div className="weatherTile">
+    <div className="weatherTile shadowed">
       <img
         className="icon"
         src={`http://openweathermap.org/img/wn/${tileData.icon}.png`}

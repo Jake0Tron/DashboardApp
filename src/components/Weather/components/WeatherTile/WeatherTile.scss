@@ -5,9 +5,9 @@
   border-radius: $size-x-small;
   display: flex;
   flex-direction: column;
-  background-color: $colour-primary-100;
+  background-color: $colour-primary-300;
   align-items: center;
-  box-shadow: 0 2px 4px $colour-primary-400;
+  margin: $size-xx-small 0;
 }
 
 .description {

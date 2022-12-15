@@ -1,6 +1,7 @@
+@import "../../../../theme.scss";
 .newsTitle {
   .title {
-    font-size: large;
+    font-size: x-large;
   }
   .nameDate {
     display: flex;
@@ -9,8 +10,8 @@
   }
 
   .description {
-    font-size: medium;
-    margin: 3px 2px;
+    font-size: small;
+    margin: $size-x-small;
   }
   .readUrl {
     font-size: small;

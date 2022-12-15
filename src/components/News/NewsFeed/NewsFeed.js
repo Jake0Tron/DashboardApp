@@ -10,7 +10,7 @@ const getNewsData = async (topics) => {
     const data = await resp.json();
     return data;
   } else {
-    return [];
+    return null;
   }
 };
 
@@ -74,21 +74,22 @@ const NewsFeed = () => {
     }
   };
   return (
-    <div className="container newsFeed">
+    <div className="container shadowed newsFeed">
       <div>News Feed</div>
       <SearchBar
         onChange={(e) => setLatestTopic(e.target.value)}
         value={latestTopic}
         onKeyDown={onSearchKeyDown}
       />
-      <button onClick={(e) => onAddTopicClick(latestTopic)}>
-        Add to list of topics
-      </button>
-      <button onClick={onSearchButtonClick}>Search!</button>
-
+      <div className="buttonContainer">
+        <button onClick={(e) => onAddTopicClick(latestTopic)}>
+          Add to list of topics
+        </button>
+        <button onClick={onSearchButtonClick}>Search!</button>
+      </div>
       <div className="topicList">
         {topics.map((topic) => (
-          <div className="topic" key={topic}>
+          <div className="shadowed topic" key={topic}>
             {topic}{" "}
             <span className="removeTopic" onClick={() => removeTopic(topic)}>
               x
@@ -98,15 +99,13 @@ const NewsFeed = () => {
       </div>
       {isLoadingData ? (
         <Loading />
-      ) : (
-        <div className="articles">
-          {newsData != null
-            ? newsData.map((news) => (
-                <NewsArticle newsData={news} key={news.url} />
-              ))
-            : null}
+      ) : newsData != null ? (
+        <div className="shadowed articles">
+          {newsData.map((news) => (
+            <NewsArticle newsData={news} key={news.url} />
+          ))}
         </div>
-      )}
+      ) : null}
     </div>
   );
 };

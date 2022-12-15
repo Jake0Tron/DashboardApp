@@ -4,17 +4,32 @@ body {
 }
 .App {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
-  padding: 2px;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: $colour-primary-100;
 
   .container {
     border-radius: $size-med;
-    margin: 3px;
+    margin: $size-med;
     padding: $size-med;
-    box-shadow: $size-small $size-small $size-med $colour-primary-500,
-      inset 1px 0 4px $colour-primary-500;
-    max-height: $container-size-large;
-    max-width: $container-size-large;
+  }
+
+  .shadowed {
+    border: 1px solid $colour-primary-500;
+    box-shadow: 0 $size-xx-small $size-x-small $colour-black,
+      inset 0 $size-x-small $size-x-small $colour-white;
+  }
+
+  // default button styles
+  button {
+    background-color: $colour-primary-200;
+    border: 1px solid $colour-primary-600;
+    color: $colour-primary-600;
+    padding: $size-x-small $size-med-small;
+    border-radius: $size-x-small;
+  }
+  button:hover {
+    background-color: $colour-primary-300;
   }
 }
